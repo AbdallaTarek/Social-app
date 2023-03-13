@@ -11,7 +11,9 @@ import SwiftUI
 struct SocialApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                LoginCoordinator()
+            }
         }
     }
 }

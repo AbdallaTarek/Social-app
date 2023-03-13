@@ -8,17 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		4D7466E229BF23FA00A51946 /* SocialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7466E129BF23FA00A51946 /* SocialApp.swift */; };
-		4D7466E429BF23FA00A51946 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7466E329BF23FA00A51946 /* ContentView.swift */; };
+		4D7466E429BF23FA00A51946 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7466E329BF23FA00A51946 /* LoginView.swift */; };
 		4D7466E629BF23FB00A51946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7466E529BF23FB00A51946 /* Assets.xcassets */; };
 		4D7466E929BF23FB00A51946 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7466E829BF23FB00A51946 /* Preview Assets.xcassets */; };
+		4D7466F729BF26E900A51946 /* LoginInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7466F629BF26E900A51946 /* LoginInformationView.swift */; };
+		4D7466FB29BF279D00A51946 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7466FA29BF279D00A51946 /* Colors.swift */; };
+		4DBE633C29BFAACB00A354A4 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE633B29BFAACB00A354A4 /* UsernameTextField.swift */; };
+		4DBE634129BFAB2400A354A4 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE634029BFAB2400A354A4 /* PasswordTextField.swift */; };
+		4DBE634429BFB21F00A354A4 /* MainButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE634329BFB21F00A354A4 /* MainButtons.swift */; };
+		4DBE634729BFBCF900A354A4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE634629BFBCF900A354A4 /* LoginViewModel.swift */; };
+		4DBE634C29BFC9F000A354A4 /* PostItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE634B29BFC9F000A354A4 /* PostItemView.swift */; };
+		4DBE634F29BFCE3B00A354A4 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE634E29BFCE3B00A354A4 /* Alert.swift */; };
+		4DBE635A29BFD58800A354A4 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE635929BFD58800A354A4 /* LoginCoordinator.swift */; };
+		4DBE636029BFE1B500A354A4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE635D29BFE1B500A354A4 /* NetworkClient.swift */; };
+		4DBE636129BFE1B500A354A4 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE635E29BFE1B500A354A4 /* NetworkUtils.swift */; };
+		4DBE636229BFE1B500A354A4 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBE635F29BFE1B500A354A4 /* NetworkProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D7466DE29BF23FA00A51946 /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7466E129BF23FA00A51946 /* SocialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialApp.swift; sourceTree = "<group>"; };
-		4D7466E329BF23FA00A51946 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4D7466E329BF23FA00A51946 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4D7466E529BF23FB00A51946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D7466E829BF23FB00A51946 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4D7466F629BF26E900A51946 /* LoginInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInformationView.swift; sourceTree = "<group>"; };
+		4D7466FA29BF279D00A51946 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4DBE633B29BFAACB00A354A4 /* UsernameTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameTextField.swift; sourceTree = "<group>"; };
+		4DBE634029BFAB2400A354A4 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		4DBE634329BFB21F00A354A4 /* MainButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtons.swift; sourceTree = "<group>"; };
+		4DBE634629BFBCF900A354A4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		4DBE634B29BFC9F000A354A4 /* PostItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemView.swift; sourceTree = "<group>"; };
+		4DBE634E29BFCE3B00A354A4 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		4DBE635929BFD58800A354A4 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		4DBE635D29BFE1B500A354A4 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		4DBE635E29BFE1B500A354A4 /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		4DBE635F29BFE1B500A354A4 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +76,12 @@
 			isa = PBXGroup;
 			children = (
 				4D7466E129BF23FA00A51946 /* SocialApp.swift */,
-				4D7466E329BF23FA00A51946 /* ContentView.swift */,
+				4DBE635629BFD1D500A354A4 /* Coordinator */,
+				4DBE633D29BFAAEC00A354A4 /* ReusableViews */,
+				4D7466F929BF278A00A51946 /* Theme */,
+				4D7466EF29BF264900A51946 /* Modules */,
+				4DBE634D29BFCE2900A354A4 /* Extensions */,
+				4DBE635B29BFE1B500A354A4 /* Networking */,
 				4D7466E529BF23FB00A51946 /* Assets.xcassets */,
 				4D7466E729BF23FB00A51946 /* Preview Content */,
 			);
@@ -65,6 +94,133 @@
 				4D7466E829BF23FB00A51946 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4D7466EF29BF264900A51946 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4D7466F029BF26BD00A51946 /* Login */,
+				4DBE634829BFC8EB00A354A4 /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4D7466F029BF26BD00A51946 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4D7466F129BF26C400A51946 /* Views */,
+				4DBE634629BFBCF900A354A4 /* LoginViewModel.swift */,
+				4D7466E329BF23FA00A51946 /* LoginView.swift */,
+				4DBE635929BFD58800A354A4 /* LoginCoordinator.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4D7466F129BF26C400A51946 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D7466F629BF26E900A51946 /* LoginInformationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D7466F929BF278A00A51946 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				4D7466FA29BF279D00A51946 /* Colors.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		4DBE633D29BFAAEC00A354A4 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				4DBE635029BFCE5400A354A4 /* Alert */,
+				4DBE634229BFB21000A354A4 /* Buttons */,
+				4DBE633E29BFAAF400A354A4 /* TextFaild */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		4DBE633E29BFAAF400A354A4 /* TextFaild */ = {
+			isa = PBXGroup;
+			children = (
+				4DBE633B29BFAACB00A354A4 /* UsernameTextField.swift */,
+				4DBE634029BFAB2400A354A4 /* PasswordTextField.swift */,
+			);
+			path = TextFaild;
+			sourceTree = "<group>";
+		};
+		4DBE634229BFB21000A354A4 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				4DBE634329BFB21F00A354A4 /* MainButtons.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		4DBE634829BFC8EB00A354A4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4DBE634929BFC90A00A354A4 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4DBE634929BFC90A00A354A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DBE634A29BFC9DB00A354A4 /* PostItemView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4DBE634A29BFC9DB00A354A4 /* PostItemView */ = {
+			isa = PBXGroup;
+			children = (
+				4DBE634B29BFC9F000A354A4 /* PostItemView.swift */,
+			);
+			path = PostItemView;
+			sourceTree = "<group>";
+		};
+		4DBE634D29BFCE2900A354A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4DBE635029BFCE5400A354A4 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				4DBE634E29BFCE3B00A354A4 /* Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		4DBE635629BFD1D500A354A4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4DBE635B29BFE1B500A354A4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4DBE635C29BFE1B500A354A4 /* NetworkProvider */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4DBE635C29BFE1B500A354A4 /* NetworkProvider */ = {
+			isa = PBXGroup;
+			children = (
+				4DBE635D29BFE1B500A354A4 /* NetworkClient.swift */,
+				4DBE635E29BFE1B500A354A4 /* NetworkUtils.swift */,
+				4DBE635F29BFE1B500A354A4 /* NetworkProvider.swift */,
+			);
+			path = NetworkProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +293,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D7466E429BF23FA00A51946 /* ContentView.swift in Sources */,
+				4DBE633C29BFAACB00A354A4 /* UsernameTextField.swift in Sources */,
+				4DBE635A29BFD58800A354A4 /* LoginCoordinator.swift in Sources */,
+				4DBE634129BFAB2400A354A4 /* PasswordTextField.swift in Sources */,
+				4D7466E429BF23FA00A51946 /* LoginView.swift in Sources */,
+				4DBE634429BFB21F00A354A4 /* MainButtons.swift in Sources */,
+				4DBE634729BFBCF900A354A4 /* LoginViewModel.swift in Sources */,
+				4DBE634F29BFCE3B00A354A4 /* Alert.swift in Sources */,
+				4DBE636229BFE1B500A354A4 /* NetworkProvider.swift in Sources */,
+				4D7466FB29BF279D00A51946 /* Colors.swift in Sources */,
+				4D7466F729BF26E900A51946 /* LoginInformationView.swift in Sources */,
+				4DBE636129BFE1B500A354A4 /* NetworkUtils.swift in Sources */,
+				4DBE634C29BFC9F000A354A4 /* PostItemView.swift in Sources */,
 				4D7466E229BF23FA00A51946 /* SocialApp.swift in Sources */,
+				4DBE636029BFE1B500A354A4 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,13 +435,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Social/Preview Content\"";
+				DEVELOPMENT_TEAM = JUV326K7BG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,13 +464,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Social/Preview Content\"";
+				DEVELOPMENT_TEAM = JUV326K7BG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
