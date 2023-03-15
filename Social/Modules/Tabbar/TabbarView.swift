@@ -18,35 +18,40 @@ struct TabbarView: View {
         TabView(selection: $selectedTab) {
             PostsCoordinator()
                 .tabItem {
-                    tabbarItem()
+                    tabbarItem(image: "home-icon")
                 }
                 .tag(0)
 
             Text("Second View")
                 .tabItem {
-                    Image(systemName: "2.circle")
-                    Text("Second")
+                    tabbarItem(image: "shop")
                 }
                 .tag(1)
 
             Text("Third View")
                 .tabItem {
-                    Image(systemName: "3.circle")
-                    Text("Third")
+                    tabbarItem(image: "discount-shape")
                 }
                 .tag(2)
+
+            Text("Forth View")
+                .tabItem {
+                    tabbarItem(image: "profile")
+                }
+                .tag(3)
         }
         .accentColor(AppColors.shared.mainColor)
     }
 }
 
 struct tabbarItem: View {
+    var image: String
     var body: some View {
         Rectangle()
             .background(AppColors.shared.mainColor)
             .frame(width: 20, height: 20)
             .cornerRadius(4, antialiased: true)
 
-        Image("home-icon")
+        Image(image)
     }
 }

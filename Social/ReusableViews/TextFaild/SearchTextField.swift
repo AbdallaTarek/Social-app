@@ -9,12 +9,16 @@ import SwiftUI
 
 struct SearchTextField: View {
     var textPlaceHolder: String
-    @Binding var text: String
+    @State var text: String = ""
     @Binding var cancelAction: Bool
+    var onChanetext: ((String) -> Void)?
 
     var body: some View {
         HStack {
             TextField(textPlaceHolder, text: $text)
+                .onChange(of: text) { newValue in
+                    onChanetext?(newValue)
+                }
                 .font(.system(size: 14))
                 .textFieldStyle(.roundedBorder)
 

@@ -29,9 +29,3 @@ struct PostUserInformationView: View {
         }
     }
 }
-
-struct PostItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        PostUserInformationView(userAvatar: "avatar", userName: "Abdullah Tarek", postTime: "2 days ago")
-    }
-}

@@ -10,6 +10,7 @@ import Foundation
 enum PlenyRouter {
     case login(userName: String, password: String)
     case getPosts(limit: Int, skip: Int)
+    case getSearchPost(search: String)
 }
 
 extension PlenyRouter: Route {
@@ -21,13 +22,14 @@ extension PlenyRouter: Route {
         switch self {
         case .login: return PlenyServerPath.login.value
         case .getPosts: return PlenyServerPath.getPosts.value
+        case .getSearchPost: return PlenyServerPath.getPosts.value
         }
     }
 
     var method: URLRequest.HTTPMethod {
         switch self {
         case .login: return .post
-        case .getPosts: return .get
+        case .getPosts , .getSearchPost: return .get
         }
     }
 
@@ -51,6 +53,11 @@ extension PlenyRouter: Route {
                 PlenyParameterKeys.limit.rawValue: String(describing: limit),
                 PlenyParameterKeys.skip.rawValue: String(describing: skip),
             ]
+            
+        case let .getSearchPost(search):
+            return [
+                "q": search,
+            ]
 
         default:
             return [:]
@@ -67,7 +74,7 @@ extension PlenyRouter: Route {
 
     var dataFields: HTTPBodyDataFields {
         switch self {
-        case .login, .getPosts:
+        case .login, .getPosts ,.getSearchPost:
             return .empty
         }
     }

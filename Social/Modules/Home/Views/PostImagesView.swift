@@ -1,6 +1,6 @@
 //
 //  PostImagesView.swift
-//  demo2
+//  Social
 //
 //  Created by abdullah tarek on 13/03/2023.
 //
@@ -23,7 +23,6 @@ struct PostImagesView: View {
                             }
                         }
                     }
-                    .frame(height: proxy.size.width)
                     VStack(spacing: 8) {
                         if images.count == 2 {
                             ImageView(url: images[1], width: (proxy.size.width - 5.0) / 2.0)
@@ -46,8 +45,8 @@ struct PostImagesView: View {
                             }
                         }
                     }
-                    .frame(height: proxy.size.width)
                 }
+                .frame(height: proxy.size.width)
                 .clipped()
                 .cornerRadius(5)
             }
@@ -75,15 +74,3 @@ struct ImageView: View {
         }
     }
 }
-
-// struct PostImagesView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PostImagesView(images: [
-//            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYgv_7WcHGDMSb2j_ZbjdqXWr9s0UEumDMag&usqp=CAU",
-//            "https://assets.cntraveller.in/photos/63beac1d79d81704e445df48/16:9/w_1024%2Cc_limit/Chole-bhature.jpg",
-//            "https://web-assets.bcg.com/3c/3d/794ddde7481695d246407d66e179/food-for-thought-the-untapped-climate-opportunity-in-alternative-proteins-rectangle.jpg",
-//            "https://raisingchildren.net.au/__data/assets/image/0033/48786/healthy-food-school-age-children.jpg",
-//            "https://insanelygoodrecipes.com/wp-content/uploads/2020/08/chicken-strips.png",
-//        ])
-//    }
-// }

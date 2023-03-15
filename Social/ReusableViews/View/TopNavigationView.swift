@@ -9,34 +9,32 @@ import SwiftUI
 
 struct TopNavigationView: View {
     @Binding var isFilterEnabled: Bool
-    @State var search: String = ""
-
+    var onChangeText: (String) -> Void
     var body: some View {
         ZStack(alignment: .center) {
-            VStack {
+            VStack(spacing: 0) {
                 if isFilterEnabled {
-                    SearchTextField(textPlaceHolder: "Search what you need ...", text: $search, cancelAction: $isFilterEnabled)
+                    SearchTextField(textPlaceHolder: "Search what you need ...", cancelAction: $isFilterEnabled) { onChangeText($0) }
                 } else {
                     HStack {
                         GradientText()
                         Spacer()
                         Button(role: .destructive, action: {
-                            withAnimation {
+                            withAnimation(.easeInOut(duration: 0.3), {
                                 isFilterEnabled = true
-                            }
-
+                            })
                         }) {
                             Image("search")
-                                .frame(width: 16)
+                                .frame(width: 20)
                                 .aspectRatio(1, contentMode: .fit)
                                 .padding(.trailing, 16)
                         }
                     }
                 }
             }
-            .frame(height: 40)
             .padding(16)
         }
+        .frame(height: 50)
     }
 }
 
@@ -44,7 +42,7 @@ struct GradientText: View {
     var body: some View {
         Text("LOGO")
             .gradientForeground(colors: [.red, .blue])
-            .font(.system(size: 30, weight: .bold))
+            .font(.system(size: 24, weight: .bold))
     }
 }
 
@@ -59,10 +57,3 @@ extension View {
         .mask(self)
     }
 }
-
-// struct TopNavigationView_Previews: PreviewProvider {
-//    @State var dd: Bool
-//    static var previews: some View {
-//        TopNavigationView(isFilterEnabled: $dd)
-//    }
-// }

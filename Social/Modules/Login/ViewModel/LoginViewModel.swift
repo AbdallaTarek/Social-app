@@ -11,11 +11,11 @@ import Foundation
 class LoginViewModel: ObservableObject {
     // MARK: - Properties -
 
-    @Published var username: String = "kminchelle"
-    @Published var password: String = "0lelplR"
+    @Published var userData: UserModel?
     @Published var hasError: Bool = false
     @Published var errorText: String = ""
-    @Published var userData: UserModel?
+    @Published var password: String = "0lelplR"
+    @Published var username: String = "kminchelle"
 
     private var cancellables = Set<AnyCancellable>()
 
