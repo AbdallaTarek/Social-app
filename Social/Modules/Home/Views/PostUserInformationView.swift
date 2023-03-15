@@ -11,7 +11,9 @@ struct PostUserInformationView: View {
     var userAvatar: String
     var userName: String
     var postTime: String
-
+    
+    @Binding var isShowImage: Bool
+    @Binding var selectedImage: String
     var body: some View {
         HStack(alignment: .center, spacing: 8) {
             Image(userAvatar)
@@ -19,6 +21,10 @@ struct PostUserInformationView: View {
                 .scaledToFill()
                 .frame(width: 50, height: 50)
                 .clipShape(Capsule())
+                .onTapGesture {
+                    isShowImage = true
+                    selectedImage = userAvatar
+                }
             VStack(alignment: .leading, spacing: 4) {
                 Text(userName)
                     .font(.system(size: 17, weight: .regular))

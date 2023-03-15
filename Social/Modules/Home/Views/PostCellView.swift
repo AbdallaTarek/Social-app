@@ -9,11 +9,12 @@ import SwiftUI
 
 struct PostCellView: View {
     let post: SinglePostModel
+    @Binding var isShowImage: Bool
+    @Binding var selectedImage: String
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            PostUserInformationView(userAvatar: post.userImage, userName: post.username, postTime: "11:00")
-
+            PostUserInformationView(userAvatar: post.userImage, userName: post.username, postTime: "2 Days ago", isShowImage: $isShowImage, selectedImage: $selectedImage)
             Text(post.body ?? "")
                 .font(.system(size: 14))
 
@@ -26,8 +27,3 @@ struct PostCellView: View {
     }
 }
 
-struct PostCellView_Previews: PreviewProvider {
-    static var previews: some View {
-        PostCellView(post: SinglePostModel(id: 0, title: "Abfullah Tarek", body: "hello world app", userID: 12, tags: [""], reactions: 2))
-    }
-}

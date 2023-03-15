@@ -25,6 +25,8 @@ struct SearchTextField: View {
             Button {
                 withAnimation {
                     cancelAction = false
+                    text = ""
+                    onChanetext?(text)
                 }
             } label: {
                 Image(systemName: "xmark")
