@@ -14,6 +14,7 @@ struct SocialApp: App {
             NavigationView {
                 LoginCoordinator()
             }
+            .environment(\.colorScheme, .light)
         }
     }
 }

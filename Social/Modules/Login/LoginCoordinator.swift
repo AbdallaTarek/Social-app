@@ -8,23 +8,13 @@
 import SwiftUI
 
 struct LoginCoordinator: View {
-    @State private var isLogin = false
+    @State private var isLogin: Bool = false
+
     var body: some View {
         if isLogin {
-            PostItemView(userAvatar: "avatar", userName: "medhat", postTime: "11:00")
+            PostsCoordinator()
         } else {
-            LoginView { isLogin in
-                self.isLogin = isLogin
-            }
-        }
-    }
-}
-
-struct LoginView_Previews: PreviewProvider {
-    let tapOnSinginAction: (Bool) -> Void
-
-    static var previews: some View {
-        LoginView { _ in
+            LoginView(tapOnSinginAction: $isLogin)
         }
     }
 }

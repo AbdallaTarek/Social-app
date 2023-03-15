@@ -1,5 +1,5 @@
 //
-//  PostItemView.swift
+//  PostUserInformationView.swift
 //  Social
 //
 //  Created by abdullah tarek on 13/03/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PostItemView: View {
+struct PostUserInformationView: View {
     var userAvatar: String
     var userName: String
     var postTime: String
@@ -16,7 +16,7 @@ struct PostItemView: View {
         HStack(alignment: .center, spacing: 8) {
             Image(userAvatar)
                 .resizable()
-                .scaledToFit()
+                .scaledToFill()
                 .frame(width: 50, height: 50)
                 .clipShape(Capsule())
             VStack(alignment: .leading, spacing: 4) {
@@ -32,6 +32,6 @@ struct PostItemView: View {
 
 struct PostItemView_Previews: PreviewProvider {
     static var previews: some View {
-        PostItemView(userAvatar: "avatar", userName: "Abdullah Tarek", postTime: "2 days ago")
+        PostUserInformationView(userAvatar: "avatar", userName: "Abdullah Tarek", postTime: "2 days ago")
     }
 }

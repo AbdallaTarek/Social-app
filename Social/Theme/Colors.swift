@@ -27,7 +27,7 @@ final class AppColors {
     var mainColor: Color {
         return createColor(named: .mainColor)
     }
-    
+
     var borderColor: Color {
         return createColor(named: .borderColor)
     }

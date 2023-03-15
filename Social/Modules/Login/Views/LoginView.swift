@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @ObservedObject var loginViewModel = LoginViewModel()
-    var tapOnSinginAction: (Bool) -> Void
+    @Binding var tapOnSinginAction: Bool
 
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -18,10 +18,12 @@ struct LoginView: View {
                     .resizable()
                     .scaledToFit()
 
-                LoginInformationView(username: $loginViewModel.username, paseeword: $loginViewModel.paseeword)
+                LoginInformationView(username: $loginViewModel.username, paseeword: $loginViewModel.password)
 
                 MainButtons(titleLabel: "Sign in") {
-                    tapOnSinginAction(loginViewModel.validateData())
+                    loginViewModel.loginApi { isLogin in
+                        tapOnSinginAction = isLogin
+                    }
                 }
             }
         }
