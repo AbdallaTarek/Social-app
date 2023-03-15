@@ -13,6 +13,7 @@
 		4D7466E929BF23FB00A51946 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7466E829BF23FB00A51946 /* Preview Assets.xcassets */; };
 		4D7466F729BF26E900A51946 /* LoginInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7466F629BF26E900A51946 /* LoginInformationView.swift */; };
 		4D7466FB29BF279D00A51946 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7466FA29BF279D00A51946 /* Colors.swift */; };
+		4D9F85C929C1505F00EEA713 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9F85C829C1505F00EEA713 /* TabbarView.swift */; };
 		4DAEA0AF29C107D700264BBF /* PostImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEA0AE29C107D700264BBF /* PostImagesView.swift */; };
 		4DAEA0B129C1083600264BBF /* PostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEA0B029C1083600264BBF /* PostCellView.swift */; };
 		4DAEA0B429C10AD000264BBF /* PostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAEA0B329C10AD000264BBF /* PostsModel.swift */; };
@@ -62,6 +63,7 @@
 		4D7466E829BF23FB00A51946 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4D7466F629BF26E900A51946 /* LoginInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInformationView.swift; sourceTree = "<group>"; };
 		4D7466FA29BF279D00A51946 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4D9F85C829C1505F00EEA713 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		4DAEA0AE29C107D700264BBF /* PostImagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImagesView.swift; sourceTree = "<group>"; };
 		4DAEA0B029C1083600264BBF /* PostCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellView.swift; sourceTree = "<group>"; };
 		4DAEA0B329C10AD000264BBF /* PostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModel.swift; sourceTree = "<group>"; };
@@ -141,7 +143,6 @@
 				4D7466EF29BF264900A51946 /* Modules */,
 				4DBE634D29BFCE2900A354A4 /* Extensions */,
 				4DBE637529C06C6800A354A4 /* Networking */,
-				4D7466E529BF23FB00A51946 /* Assets.xcassets */,
 				4D7466E729BF23FB00A51946 /* Preview Content */,
 			);
 			path = Social;
@@ -158,6 +159,7 @@
 		4D7466EF29BF264900A51946 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4D9F85C729C1505700EEA713 /* Tabbar */,
 				4D7466F029BF26BD00A51946 /* Login */,
 				4DBE634829BFC8EB00A354A4 /* Home */,
 			);
@@ -187,9 +189,18 @@
 		4D7466F929BF278A00A51946 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				4D7466E529BF23FB00A51946 /* Assets.xcassets */,
 				4D7466FA29BF279D00A51946 /* Colors.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		4D9F85C729C1505700EEA713 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				4D9F85C829C1505F00EEA713 /* TabbarView.swift */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 		4DAEA0B229C10AC000264BBF /* Model */ = {
@@ -515,6 +526,7 @@
 			files = (
 				4DBE633C29BFAACB00A354A4 /* UsernameTextField.swift in Sources */,
 				4DBE639B29C06C6800A354A4 /* URLRequest+HTTPMethod.swift in Sources */,
+				4D9F85C929C1505F00EEA713 /* TabbarView.swift in Sources */,
 				4DBE635A29BFD58800A354A4 /* LoginCoordinator.swift in Sources */,
 				4DBE637429C0634200A354A4 /* Publisher+Utils.swift in Sources */,
 				4DBE63A129C06C6800A354A4 /* DataField.swift in Sources */,
@@ -699,9 +711,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Abdullah-Tarek.Social";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -728,9 +743,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Abdullah-Tarek.Social";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

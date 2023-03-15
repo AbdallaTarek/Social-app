@@ -12,7 +12,8 @@ struct LoginCoordinator: View {
 
     var body: some View {
         if isLogin {
-            PostsCoordinator()
+            TabbarView()
+
         } else {
             LoginView(tapOnSinginAction: $isLogin)
         }
